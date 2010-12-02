@@ -1,0 +1,19 @@
+#
+# Parser/Lexer written by Joshua Kovach
+# Version 0.10.07.15
+# for CIS 675 - Compilers Construction with Dr. Adams
+#
+
+# Language Grammar:
+#
+# program ::= stmt_list
+# stmt_list ::= stmt ";" stmt_list
+#            | nil
+# stmt ::= id ":=" expr
+#            | "if" expr "then" stmt
+#            | "while" expr "do" stmt
+#            | "begin" stmt_list "end"
+# expr ::= id "==" id
+#           | id "!=" id
+#           | id
+#
